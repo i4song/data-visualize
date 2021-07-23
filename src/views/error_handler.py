@@ -1,5 +1,6 @@
 from . import *
 
+
 @api_error.app_errorhandler(Exception)
 def main_error_handler(error):
     if error.code != 500:
@@ -12,7 +13,7 @@ def main_error_handler(error):
         'success': success,
         'error': {
             'type': error.__class__.__name__,
-            'desc':desc
+            'desc': desc
         }
     }
     current_app.logger.critical(response)

@@ -1,0 +1,1 @@
+2021-07-22 14:06:29,147 - LevelName : CRITICAL in error_handler [18]  Message : {'success': False, 'error': {'type': 'NotFound', 'desc': '예상치 못한 에러'}}

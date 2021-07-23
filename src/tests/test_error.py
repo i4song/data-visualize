@@ -1,7 +1,8 @@
 from . import *
 
-@pytest.mark.parametrize('error_code',[
-    (400), (403)
+
+@pytest.mark.parametrize('error_code', [
+    400, 403
 ])
 def test_error_handler(flask_client, error_code):
     res = flask_client.get

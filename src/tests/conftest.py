@@ -1,5 +1,6 @@
 from . import *
 
+
 @pytest.fixture()
 def flask_app():
     app = create_app()

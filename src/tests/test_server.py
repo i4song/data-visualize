@@ -1,8 +1,10 @@
 from . import *
 
+
 def test_server_run(flask_app):
     app = flask_app
     assert app is not None
+
 
 @pytest.mark.parametrize('env, expected',
         [
